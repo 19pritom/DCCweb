@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5, viewport-fit=cover">
+  <title>DCC - District Computer Centre | Government of Assam</title>
+  <meta name="description" content="District Computer Centre (DCC) - Government recognized computer training institute in Assam offering DCA, ADCA, PGDCA and other courses">
+  <meta name="theme-color" content="#0033cc">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <style>
+    /* Critical CSS for above-the-fold content */
+    .loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fdf043;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease;
+    }
+  </style>
+  <style>
+    @import url('https://fonts.maateen.me/ruposhi-bangla/font.css');
+    
+    /* Fallback fonts in case Ruposhi doesn't load */
+    @font-face {
+      font-family: 'Bangla';
+      src: local('Bangla'), 
+           url('path-to-local-bangla-font.woff2') format('woff2');
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading screen -->
+  <div class="loading-screen">
+    <div class="text-center">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <p class="mt-3">Loading DCC Website...</p>
+    </div>
+  </div>
+
+  <header class="bg-yellow text-center py-3 d-flex align-items-center justify-content-between px-4 flex-wrap">
+    <div class="text-center flex-shrink-0">
+      <img src="image/sj.png" alt="Emblem of India" height="90" loading="lazy">
+      <p class="mb-0 small">Government of Assam</p>
+    </div>
+    <div class="flex-grow-1 px-3">
+      <h2 class="assamese-text mb-1">জিলা কম্পিউটাৰ কেন্দ্র</h2>
+      <h1 class="text-blue fw-bold">DISTRICT COMPUTER CENTRE</h1>
+      <h4 class="text-blue fw-bold">DOODOOMA EXTENSION CENTER</h4>
+      <p class="mb-0">Government of Assam</p>
+    </div>
+    <img src="image/amtron.jpg" alt="AMTRON" height="60" loading="lazy" class="flex-shrink-0">
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">DCC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faculty">Faculty</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#map">Location</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/Lab.jpeg" class="d-block w-100" alt="Modern Computer Lab" loading="lazy">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Modern Computer Labs</h5>
+          <p>Experience hands-on learning with high-end systems.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/classroom.jpeg" class="d-block w-100" alt="Smart Classroom" loading="lazy">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Smart Classrooms</h5>
+          <p>Interactive learning with the latest technology.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/seminar.jpg" class="d-block w-100" alt="Workshop Session" loading="lazy">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Workshops & Seminars</h5>
+          <p>Expand your knowledge beyond the classroom.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <main class="container mt-4">
+    <section id="about" class="mb-5 p-4 p-md-5 bg-white rounded shadow">
+      <h2 class="text-center mb-4">About Us</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="image/Welcome.jpeg" alt="DCC Building" class="img-fluid rounded mb-4 mb-lg-0" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <p class="fs-5">
+            <strong>District Computer Centre (DCC)</strong> is a premier government-recognized training institute under the Government of Assam, committed to delivering quality computer education and digital literacy to students, professionals, and citizens of all backgrounds.
+          </p>
+          <p class="fs-5">
+            We are proud to announce that <strong>DCC has successfully completed 11 glorious years</strong> of service in the field of computer education and skill development. Our alumni are now working across various sectors including government departments, private enterprises, and self-employment ventures.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Learn More</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Our Achievements</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="eligibility" class="mb-5 p-4 p-md-5 bg-light rounded">
+      <h2 class="text-center mb-4">Find Your Right Course</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card shadow">
+            <div class="card-body">
+              <div class="mb-3">
+                <label for="qualification" class="form-label">Select your Qualification:</label>
+                <select id="qualification" class="form-select" onchange="showEligibleCourses()">
+                  <option value="">-- Select --</option>
+                  <option value="10th/12th">10th/12th Pass</option>
+                  <option value="graduate">Graduate</option>
+                  <option value="others">Others</option>
+                </select>
+              </div>
+              <div id="courseOptions" class="mt-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="courses" class="mb-5">
+      <h2 class="text-center mb-4">Our Courses</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+        <div class="course-box h-100">
+          <div class="text-center mb-3">
+            <i class="fas fa-certificate fa-3x text-primary"></i> <!-- Different icon for CCA -->
+          </div>
+          <h4 class="text-center text-primary">CCA</h4> <!-- Different color for distinction -->
+          <p class="text-center">Certificate in Computer Applications</p>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-check text-success me-2"></i> Duration: 3 Months</li>
+            <li><i class="fas fa-check text-success me-2"></i> Eligibility: 10th Pass</li>
+            <li><i class="fas fa-check text-success me-2"></i> Certification: Government Approved</li>
+            <li><i class="fas fa-check text-success me-2"></i> Ideal for beginners</li>
+          </ul>
+        </div>
+      </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="course-box h-100">
+            <div class="text-center mb-3">
+              <i class="fas fa-laptop-code fa-3x text-primary"></i>
+            </div>
+            <h4 class="text-center text-primary">DCA</h4>
+            <p class="text-center">Diploma in Computer Applications</p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check text-success me-2"></i> Duration: 6 Months</li>
+              <li><i class="fas fa-check text-success me-2"></i> Eligibility: 10th Pass</li>
+              <li><i class="fas fa-check text-success me-2"></i> Certification: Government Approved</li>
+            </ul>
+            <div class="text-center mt-3">
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <div class="course-box h-100">
+            <div class="text-center mb-3">
+              <i class="fas fa-desktop fa-3x text-primary"></i>
+            </div>
+            <h4 class="text-center text-primary">ADCA</h4>
+            <p class="text-center">Advanced Diploma in Computer Applications</p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check text-success me-2"></i> Duration: 12 Months</li>
+              <li><i class="fas fa-check text-success me-2"></i> Eligibility: 12th Pass</li>
+              <li><i class="fas fa-check text-success me-2"></i> Certification: Government Approved</li>
+            </ul>
+            <div class="text-center mt-3">
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <div class="course-box h-100">
+            <div class="text-center mb-3">
+              <i class="fas fa-graduation-cap fa-3x text-primary"></i>
+            </div>
+            <h4 class="text-center text-primary">PGDCSA</h4>
+            <p class="text-center">Post Graduate Diploma in Computer Science and Applications</p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check text-success me-2"></i> Duration: 12 Months</li>
+              <li><i class="fas fa-check text-success me-2"></i> Eligibility: Graduation</li>
+              <li><i class="fas fa-check text-success me-2"></i> Certification: Government Approved</li>
+            </ul>
+            <div class="text-center mt-3">
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <div class="course-box h-100">
+            <div class="text-center mb-3">
+              <i class="fas fa-calculator fa-3x text-primary"></i>
+            </div>
+            <h4 class="text-center text-primary">Tally with GST</h4>
+            <p class="text-center">Certificate Course in Tally & GST</p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check text-success me-2"></i> Duration: 3 Months</li>
+              <li><i class="fas fa-check text-success me-2"></i> Eligibility: 12th Pass</li>
+              <li><i class="fas fa-check text-success me-2"></i> Certification: Government Approved</li>
+            </ul>
+            <div class="text-center mt-3">
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <div class="course-box h-100">
+            <div class="text-center mb-3">
+              <i class="fas fa-robot fa-3x text-primary"></i>
+            </div>
+            <h4 class="text-center text-primary">DIA</h4>
+            <p class="text-center">Diploma in IT & Automation</p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check text-success me-2"></i> Duration: 6 Months</li>
+              <li><i class="fas fa-check text-success me-2"></i> Eligibility: 10th Pass</li>
+              <li><i class="fas fa-check text-success me-2"></i> Certification: Government Approved</li>
+            </ul>
+            <div class="text-center mt-3">
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <div class="course-box h-100">
+            <div class="text-center mb-3">
+              <i class="fas fa-file-invoice-dollar fa-3x text-primary"></i>
+            </div>
+            <h4 class="text-center text-primary">DOA & FA</h4>
+            <p class="text-center">Diploma in Office Automation & Financial Accounting</p>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check text-success me-2"></i> Duration: 6 Months</li>
+              <li><i class="fas fa-check text-success me-2"></i> Eligibility: 12th Pass</li>
+              <li><i class="fas fa-check text-success me-2"></i> Certification: Government Approved</li>
+            </ul>
+            <div class="text-center mt-3">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+   <!-- Advantages & Certificate Section -->
+<section id="advantages-certificate" class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <!-- Advantages Column -->
+      <div class="col-lg-7">
+        <h2 class="text-center mb-4">Our Advantages</h2>
+        <div class="advantages-list bg-white p-4 rounded shadow">
+          <ul class="list-unstyled">
+            <li class="mb-3 p-3 border-bottom d-flex align-items-center">
+              <i class="fas fa-desktop text-primary me-3 fa-lg"></i>
+              <div>
+                <h5 class="mb-1">Hi-Tech Computer Lab</h5>
+                <p class="small text-muted mb-0">Modern equipment with latest software</p>
+              </div>
+            </li>
+            <li class="mb-3 p-3 border-bottom d-flex align-items-center">
+              <i class="fas fa-chalkboard-teacher text-primary me-3 fa-lg"></i>
+              <div>
+                <h5 class="mb-1">Experienced Faculty</h5>
+                <p class="small text-muted mb-0">Industry experts with 10+ years experience</p>
+              </div>
+            </li>
+            <li class="mb-3 p-3 border-bottom d-flex align-items-center">
+              <i class="fas fa-balance-scale text-primary me-3 fa-lg"></i>
+              <div>
+                <h5 class="mb-1">Theory + Practical Focus</h5>
+                <p class="small text-muted mb-0">50% hands-on lab sessions</p>
+              </div>
+            </li>
+            <li class="mb-3 p-3 border-bottom d-flex align-items-center">
+              <i class="fas fa-rupee-sign text-primary me-3 fa-lg"></i>
+              <div>
+                <h5 class="mb-1">Lowest Course Fees</h5>
+                <p class="small text-muted mb-0">Easy installment options available</p>
+              </div>
+            </li>
+            <li class="mb-3 p-3 border-bottom d-flex align-items-center">
+              <i class="fas fa-laptop text-primary me-3 fa-lg"></i>
+              <div>
+                <h5 class="mb-1">1:1 Computer Ratio</h5>
+                <p class="small text-muted mb-0">Dedicated systems for each student</p>
+              </div>
+            </li>
+            <li class="p-3 d-flex align-items-center">
+              <i class="fas fa-award text-primary me-3 fa-lg"></i>
+              <div>
+                <h5 class="mb-1">Govt. Recognized</h5>
+                <p class="small text-muted mb-0">11 years of certified excellence</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Certificate Column -->
+      <div class="col-lg-5">
+        <div class="certificate-display h-100">
+          <div class="bg-white p-4 rounded shadow h-100 d-flex flex-column">
+            <h2 class="text-center mb-4">Our Certificate</h2>
+            <div class="certificate-container flex-grow-1 d-flex align-items-center">
+              <img src="image/demo-cerificate.jpg" alt="DCC Official Certificate" class="img-fluid border rounded">
+            </div>
+            <div class="certificate-footer text-center mt-3">
+              <div class="badge bg-primary mb-2">
+                <i class="fas fa-check-circle me-2"></i> Government Approved
+              </div>
+              <p class="small text-muted">Awarded to all successful candidates</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="faculty" class="mb-5">
+      <h2 class="text-center mb-4">Faculty Members</h2>
+      <div class="row justify-content-center mb-5">
+        <div class="col-md-8 col-lg-6">
+          <div class="card shadow text-center">
+            <div class="card-body">
+              <h4 class="card-title">Harsh Agarwal</h4>
+              <p class="card-subtitle text-muted mb-2">Officer In Charge</p>
+              <p class="card-text">Overall administration and management of DCC</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <div class="col">
+          <div class="card shadow h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">Randeep Bordoloi</h5>
+              <p class="card-text text-muted">DIA, DOA & FA</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">Bornali Borah</h5>
+              <p class="card-text text-muted">ADCA</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">Sadika Khatun</h5>
+              <p class="card-text text-muted">PGDCSA</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">Preeti Chutia</h5>
+              <p class="card-text text-muted">DCA, CCA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   <!-- Updated Vertical Certificate Carousel -->
+<section id="certificates" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">Certificate Distribution Moments</h2>
+    
+    <div id="certificateCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Each carousel item contains 2 vertical photos -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center g-4">
+            <div class="col-md-6">
+              <div class="certificate-card">
+                <img src="image/c1.jpg" class="d-block w-100" alt="Certificate distribution" loading="lazy">
+                
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="certificate-card">
+                <img src="image/c2.jpg" class="d-block w-100" alt="Happy students" loading="lazy">
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <div class="row justify-content-center g-4">
+            <div class="col-md-6">
+              <div class="certificate-card">
+                <img src="image/c3.jpg" class="d-block w-100" alt="Faculty with students" loading="lazy">
+              
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="certificate-card">
+                <img src="image/c4.jpg" class="d-block w-100" alt="Group photo" loading="lazy">
+             
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <div class="row justify-content-center g-4">
+            <div class="col-md-6">
+              <div class="certificate-card">
+                <img src="image/c5.jpg" class="d-block w-100" alt="Certificate moment" loading="lazy">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="certificate-card">
+                <img src="image/c6.jpg" class="d-block w-100" alt="Ceremony" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Custom Carousel Controls -->
+      <button class="carousel-control-prev1" type="button" data-bs-target="#certificateCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next1" type="button" data-bs-target="#certificateCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="p-4 p-md-5 bg-white rounded shadow mb-5">
+  <h2 class="text-center mb-4">Contact Us</h2>
+  <div class="row">
+    <div class="col-lg-6 mb-4 mb-lg-0">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-map-marker-alt text-danger me-2"></i> Address</h5>
+          <p class="card-text">DCC Doodooma Extension Center<br>
+          Sonari Patti<br>
+          Doodooma, Assam - 786151</p>
+          
+          <h5 class="card-title mt-4"><i class="fas fa-phone-alt text-primary me-2"></i> Phone</h5>
+          <p class="card-text">+91 1234567890<br>+91 9876543210</p>
+          
+          <h5 class="card-title mt-4"><i class="fas fa-envelope text-info me-2"></i> Email</h5>
+          <p class="card-text">dccamtddm@gmail.com<br>admissions@dccdoodooma.edu.in</p>
+          
+          <h5 class="card-title mt-4"><i class="fas fa-clock text-warning me-2"></i> Working Hours</h5>
+          <p class="card-text">Monday - Saturday: 8:00 AM - 6:00 PM<br>
+          Sunday: Closed</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <form id="contactForm" class="row g-3">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Your Name*</label>
+          <input type="text" name="name" class="form-control" id="name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email*</label>
+          <input type="email" name="email" class="form-control" id="email" required>
+        </div>
+        <div class="col-12">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" name="phone" class="form-control" id="phone">
+        </div>
+        <div class="col-12">
+          <label for="course" class="form-label">Interested Course</label>
+          <select name="course" id="course" class="form-select">
+            <option value="">Select a course</option>
+            <option value="DCA">DCA</option>
+            <option value="ADCA">ADCA</option>
+            <option value="PGDCA">PGDCA</option>
+            <option value="Tally">Tally with GST</option>
+            <option value="DIA">DIA</option>
+            <option value="DOA">DOA & FA</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <label for="message" class="form-label">Message</label>
+          <textarea name="message" class="form-control" id="message" rows="4"></textarea>
+        </div>
+        <div class="col-12">
+          <div id="formResponse" class="mb-3"></div>
+          <button type="submit" class="btn btn-primary w-100">
+            <span id="submitText">Send Message</span>
+            <span id="submitSpinner" class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+    <section id="enroll" class="p-4 p-md-5 bg-primary text-white text-center rounded shadow mb-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="mb-3">Ready to Start Your Journey?</h2>
+          <p class="lead mb-4">Join hundreds of successful students who have launched their careers through our programs.</p>
+          <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+            <a href="tel:+911234567890" class="btn btn-light btn-lg px-4 gap-3">
+              <i class="fas fa-phone me-2"></i> Call Now
+            </a>
+            <a href="https://forms.gle/exampleformlink" class="btn btn-outline-light btn-lg px-4" target="_blank">
+              <i class="fas fa-edit me-2"></i> Admission Form
+            </a>
+          </div>
+          <p class="mt-3 small">*Limited seats available for upcoming batches</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ <!-- In your footer section, replace the current footer with this: -->
+<footer class="bg-dark text-white pt-4 pb-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h5>About DCC</h5>
+        <p>District Computer Centre is a Government of Assam recognized institute providing quality computer education since 2012.</p>
+        <div class="social-icons">
+          <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#about" class="text-white">About Us</a></li>
+          <li><a href="#courses" class="text-white">Courses</a></li>
+          <li><a href="#faculty" class="text-white">Faculty</a></li>
+          <li><a href="#contact" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="col-md-4">
+        <!-- Small Map Section -->
+        <h5>Our Location</h5>
+        <div class="ratio ratio-1x1 mb-2">  <!-- Square aspect ratio -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.4181930106047!2d73.9153432751914!3d18.553555982549682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1bd4b41eeb3%3A0x69e6972f2c4f6375!2sComputer%20Training%20Institute!5e0!3m2!1sen!2sin!4v1716453676034!5m2!1sen!2sin" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"
+            aria-label="Location map">
+          </iframe>
+        </div>
+        <a href="https://maps.google.com/?q=DCC+Doodooma+Extension+Center" class="btn btn-sm btn-outline-light" target="_blank">
+          <i class="fas fa-directions me-1"></i> Get Directions
+        </a>
+      </div>
+    </div>
+    
+    <hr class="my-3">
+    
+    <div class="row">
+      <div class="col-md-6 text-center text-md-start">
+        <p class="mb-0 small">&copy; 2025 District Computer Centre (DCC). All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <p class="mb-0 small">Developed with <i class="fas fa-heart text-danger"></i> by DCC Web Team</p>
+      </div>
+    </div>
+  </div>
+</footer>
+  <!-- Bootstrap JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+  
+  <script>
+    // Remove loading screen when page is fully loaded
+    window.addEventListener('load', function() {
+      const loadingScreen = document.querySelector('.loading-screen');
+      if (loadingScreen) {
+        loadingScreen.style.opacity = '0';
+        setTimeout(() => {
+          loadingScreen.style.display = 'none';
+        }, 500);
+      }
+    });
+  </script>
+</body>
+</html>
